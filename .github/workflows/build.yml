@@ -61,7 +61,7 @@ jobs:
           7z a linux.7z plugin.so license.txt
           7z a linux.zip plugin.so license.txt
       - id: create_release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
